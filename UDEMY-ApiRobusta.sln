@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UDEMY-ApiRobusta.Domain", "UDEMY-ApiRobusta.Domain\UDEMY-ApiRobusta.Domain.csproj", "{5E5B4032-E2B5-4B91-8350-4DB59E43F653}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UDEMY-ApiRobusta.AppConsole", "UDEMY-ApiRobusta.AppConsole\UDEMY-ApiRobusta.AppConsole.csproj", "{FE07DCA4-93E8-4C98-A9CD-E402336F77C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E5B4032-E2B5-4B91-8350-4DB59E43F653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E5B4032-E2B5-4B91-8350-4DB59E43F653}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E5B4032-E2B5-4B91-8350-4DB59E43F653}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E5B4032-E2B5-4B91-8350-4DB59E43F653}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE07DCA4-93E8-4C98-A9CD-E402336F77C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE07DCA4-93E8-4C98-A9CD-E402336F77C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE07DCA4-93E8-4C98-A9CD-E402336F77C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE07DCA4-93E8-4C98-A9CD-E402336F77C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {519B7BD5-E93C-4679-B3C6-16E4CE3C32A1}
+	EndGlobalSection
+EndGlobal
