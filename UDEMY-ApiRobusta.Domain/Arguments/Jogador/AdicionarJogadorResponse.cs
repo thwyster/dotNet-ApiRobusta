@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using UDEMY_ApiRobusta.Domain.Interfaces.Arguments;
+using dotNet_ApiRobusta.Domain.Interfaces.Arguments;
 
-namespace UDEMY_ApiRobusta.Domain.Arguments.Jogador
+namespace dotNet_ApiRobusta.Domain.Arguments.Jogador
 {
     public class AdicionarJogadorResponse : IResponse
     {

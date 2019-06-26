@@ -1,4 +1,4 @@
-﻿namespace UDEMY_ApiRobusta.Domain.Enum
+﻿namespace dotNet_ApiRobusta.Domain.Enum
 {
     public enum StatusJogador
     {

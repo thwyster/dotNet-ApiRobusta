@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UDEMY_ApiRobusta.Domain.Arguments.Plataforma
+namespace dotNet_ApiRobusta.Domain.Arguments.Plataforma
 {
     public class AdicionarPlataformaRequest
     {

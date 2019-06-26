@@ -1,4 +1,4 @@
-﻿namespace UDEMY_ApiRobusta.Domain.Arguments.Jogador
+﻿namespace dotNet_ApiRobusta.Domain.Arguments.Jogador
 {
     public class AutenticarJogadorRequest
     {

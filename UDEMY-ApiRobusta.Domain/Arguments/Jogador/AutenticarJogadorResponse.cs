@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UDEMY_ApiRobusta.Domain.Arguments.Jogador
+namespace dotNet_ApiRobusta.Domain.Arguments.Jogador
 {
     public class AutenticarJogadorResponse
     {

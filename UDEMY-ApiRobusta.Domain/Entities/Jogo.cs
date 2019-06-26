@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UDEMY_ApiRobusta.Domain.Entities
+namespace dotNet_ApiRobusta.Domain.Entities
 {
     public class Jogo
     {

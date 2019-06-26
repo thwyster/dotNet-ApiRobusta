@@ -1,7 +1,7 @@
-﻿using UDEMY_ApiRobusta.Domain.Interfaces.Arguments;
-using UDEMY_ApiRobusta.Domain.ValueObjects;
+﻿using dotNet_ApiRobusta.Domain.Interfaces.Arguments;
+using dotNet_ApiRobusta.Domain.ValueObjects;
 
-namespace UDEMY_ApiRobusta.Domain.Arguments.Jogador
+namespace dotNet_ApiRobusta.Domain.Arguments.Jogador
 {
     public class AdicionarJogadorRequest : IRequest
     {

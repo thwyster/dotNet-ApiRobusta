@@ -1,7 +1,16 @@
-﻿namespace UDEMY_ApiRobusta.Domain.ValueObjects
+﻿using prmToolkit.NotificationPattern;
+
+namespace dotNet_ApiRobusta.Domain.ValueObjects
 {
-    public class Email
+    public class Email : Notifiable
     {
-        public string Endereco { get; set; }
+        public Email(string endereco)
+        {
+            Endereco = endereco;
+
+            new AddNotifications<Email>(this).IfNotEmail(w=> w.Endereco);
+        }
+
+        public string Endereco { get; private set; }
     }
 }

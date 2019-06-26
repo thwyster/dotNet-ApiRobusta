@@ -1,8 +1,8 @@
 ﻿using System;
-using UDEMY_ApiRobusta.Domain.Arguments.Jogador;
-using UDEMY_ApiRobusta.Domain.Entities;
+using dotNet_ApiRobusta.Domain.Arguments.Jogador;
+using dotNet_ApiRobusta.Domain.Entities;
 
-namespace UDEMY_ApiRobusta.Domain.Interfaces.Repositories
+namespace dotNet_ApiRobusta.Domain.Interfaces.Repositories
 {
     public interface IRepositoryJogador
     {

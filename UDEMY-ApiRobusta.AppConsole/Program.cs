@@ -1,8 +1,8 @@
 ﻿using System;
-using UDEMY_ApiRobusta.Domain.Arguments.Jogador;
-using UDEMY_ApiRobusta.Domain.Services;
+using dotNet_ApiRobusta.Domain.Arguments.Jogador;
+using dotNet_ApiRobusta.Domain.Services;
 
-namespace UDEMY_ApiRobusta.AppConsole
+namespace dotNet_ApiRobusta.AppConsole
 {
     class Program
     {
@@ -17,6 +17,7 @@ namespace UDEMY_ApiRobusta.AppConsole
             request.Email = "thwyster@hotmail.com";
 
             var response = service.AutenticarJogador(request);
+
             Console.ReadKey();
         }
     }

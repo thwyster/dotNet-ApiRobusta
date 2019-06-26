@@ -1,14 +1,16 @@
-﻿using System;
+﻿using prmToolkit.NotificationPattern;
+using System;
 using System.Collections.Generic;
 using System.Text;
-using UDEMY_ApiRobusta.Domain.Arguments.Jogador;
-using UDEMY_ApiRobusta.Domain.Entities;
-using UDEMY_ApiRobusta.Domain.Interfaces.Repositories;
-using UDEMY_ApiRobusta.Domain.Interfaces.Services;
+using dotNet_ApiRobusta.Domain.Arguments.Jogador;
+using dotNet_ApiRobusta.Domain.Entities;
+using dotNet_ApiRobusta.Domain.Interfaces.Repositories;
+using dotNet_ApiRobusta.Domain.Interfaces.Services;
+using dotNet_ApiRobusta.Domain.ValueObjects;
 
-namespace UDEMY_ApiRobusta.Domain.Services
+namespace dotNet_ApiRobusta.Domain.Services
 {
-    public class ServiceJogador : IServiceJogador
+    public class ServiceJogador : Notifiable, IServiceJogador
     {
         private readonly IRepositoryJogador _repositoryJogador;
 
@@ -40,28 +42,16 @@ namespace UDEMY_ApiRobusta.Domain.Services
         {
             if (request == null)
             {
-                throw new Exception("AutenticarJogadorRequest é obrigatório");
+                AddNotification("AutenticarJogadorRequest", "é obrigatorio");
             }
 
-            if (string.IsNullOrEmpty(request.Email))
-            {
-                throw new Exception("Informe um emails");
-            }
+            var email = new Email("Ronny");
+            var jogador = new Jogador(email, "222");
 
-            if (string.IsNullOrEmpty(request.Senha))
-            {
-                throw new Exception("Informe uma Senha");
-            }
+            AddNotifications(jogador, email);
 
-            if (isEmail(request.Email))
-            {
-                throw new Exception("Informe uma Senha");
-            }
-
-            if (request.Senha.Length < 6)
-            {
-                throw new Exception("A Senha deve ter pelo menos 6 caracteres");
-            }
+            if (jogador.IsInvalid())
+                return null;
 
             var response = _repositoryJogador.AutenticarJogador(request);
 

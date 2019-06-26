@@ -208,14 +208,34 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "UDEMY-ApiRobusta.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.2",
+      "prmToolkit.NotificationPattern/1.1.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
         "compile": {
-          "bin/placeholder/UDEMY-ApiRobusta.Domain.dll": {}
+          "lib/netstandard1.0/prmToolkit.NotificationPattern.dll": {}
         },
         "runtime": {
-          "bin/placeholder/UDEMY-ApiRobusta.Domain.dll": {}
+          "lib/netstandard1.0/prmToolkit.NotificationPattern.dll": {}
+        },
+        "resource": {
+          "lib/netstandard1.0/en-US/prmToolkit.NotificationPattern.resources.dll": {
+            "locale": "en-US"
+          }
+        }
+      },
+      "dotNet-ApiRobusta.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "prmToolkit.NotificationPattern": "1.1.2"
+        },
+        "compile": {
+          "bin/placeholder/dotNet-ApiRobusta.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/dotNet-ApiRobusta.Domain.dll": {}
         }
       }
     }
@@ -689,16 +709,30 @@
         "netstandard.library.nuspec"
       ]
     },
-    "UDEMY-ApiRobusta.Domain/1.0.0": {
+    "prmToolkit.NotificationPattern/1.1.2": {
+      "sha512": "21iUzm7KXAs/LbA4nl48npF02mxf0dN1bNXemmXj0K7qcuUO9bO7ldz3JmLQAX4Ahw2f+vKKkdA6xk/aY6g30g==",
+      "type": "package",
+      "path": "prmtoolkit.notificationpattern/1.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.0/en-US/prmToolkit.NotificationPattern.resources.dll",
+        "lib/netstandard1.0/prmToolkit.NotificationPattern.dll",
+        "prmtoolkit.notificationpattern.1.1.2.nupkg.sha512",
+        "prmtoolkit.notificationpattern.nuspec"
+      ]
+    },
+    "dotNet-ApiRobusta.Domain/1.0.0": {
       "type": "project",
-      "path": "../UDEMY-ApiRobusta.Domain/UDEMY-ApiRobusta.Domain.csproj",
-      "msbuildProject": "../UDEMY-ApiRobusta.Domain/UDEMY-ApiRobusta.Domain.csproj"
+      "path": "../UDEMY-ApiRobusta.Domain/dotNet-ApiRobusta.Domain.csproj",
+      "msbuildProject": "../UDEMY-ApiRobusta.Domain/dotNet-ApiRobusta.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "Microsoft.NETCore.App >= 2.2.0",
-      "UDEMY-ApiRobusta.Domain >= 1.0.0"
+      "dotNet-ApiRobusta.Domain >= 1.0.0",
+      "prmToolkit.NotificationPattern >= 1.1.2"
     ]
   },
   "packageFolders": {
@@ -708,11 +742,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GIT\\RONNY\\UDEMY-ApiRobusta\\UDEMY-ApiRobusta.AppConsole\\UDEMY-ApiRobusta.AppConsole.csproj",
-      "projectName": "UDEMY-ApiRobusta.AppConsole",
-      "projectPath": "C:\\GIT\\RONNY\\UDEMY-ApiRobusta\\UDEMY-ApiRobusta.AppConsole\\UDEMY-ApiRobusta.AppConsole.csproj",
+      "projectUniqueName": "C:\\GIT\\RONNY\\dotNet-ApiRobusta\\UDEMY-ApiRobusta.AppConsole\\dotNet-ApiRobusta.AppConsole.csproj",
+      "projectName": "dotNet-ApiRobusta.AppConsole",
+      "projectPath": "C:\\GIT\\RONNY\\dotNet-ApiRobusta\\UDEMY-ApiRobusta.AppConsole\\dotNet-ApiRobusta.AppConsole.csproj",
       "packagesPath": "C:\\Users\\ronny.czerkus\\.nuget\\packages\\",
-      "outputPath": "C:\\GIT\\RONNY\\UDEMY-ApiRobusta\\UDEMY-ApiRobusta.AppConsole\\obj\\",
+      "outputPath": "C:\\GIT\\RONNY\\dotNet-ApiRobusta\\UDEMY-ApiRobusta.AppConsole\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -732,8 +766,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\GIT\\RONNY\\UDEMY-ApiRobusta\\UDEMY-ApiRobusta.Domain\\UDEMY-ApiRobusta.Domain.csproj": {
-              "projectPath": "C:\\GIT\\RONNY\\UDEMY-ApiRobusta\\UDEMY-ApiRobusta.Domain\\UDEMY-ApiRobusta.Domain.csproj"
+            "C:\\GIT\\RONNY\\dotNet-ApiRobusta\\UDEMY-ApiRobusta.Domain\\dotNet-ApiRobusta.Domain.csproj": {
+              "projectPath": "C:\\GIT\\RONNY\\dotNet-ApiRobusta\\UDEMY-ApiRobusta.Domain\\dotNet-ApiRobusta.Domain.csproj"
             }
           }
         }
@@ -752,6 +786,10 @@
             "target": "Package",
             "version": "[2.2.0, )",
             "autoReferenced": true
+          },
+          "prmToolkit.NotificationPattern": {
+            "target": "Package",
+            "version": "[1.1.2, )"
           }
         },
         "imports": [

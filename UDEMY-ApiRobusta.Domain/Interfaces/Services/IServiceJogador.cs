@@ -1,7 +1,7 @@
-﻿using UDEMY_ApiRobusta.Domain.Arguments.Jogador;
-using UDEMY_ApiRobusta.Domain.ValueObjects;
+﻿using dotNet_ApiRobusta.Domain.Arguments.Jogador;
+using dotNet_ApiRobusta.Domain.ValueObjects;
 
-namespace UDEMY_ApiRobusta.Domain.Interfaces.Services
+namespace dotNet_ApiRobusta.Domain.Interfaces.Services
 {
     public interface IServiceJogador
     {

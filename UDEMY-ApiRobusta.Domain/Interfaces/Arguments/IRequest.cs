@@ -1,4 +1,4 @@
-﻿namespace UDEMY_ApiRobusta.Domain.Interfaces.Arguments
+﻿namespace dotNet_ApiRobusta.Domain.Interfaces.Arguments
 {
     public interface IRequest
     {

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UDEMY-ApiRobusta.Domain", "UDEMY-ApiRobusta.Domain\UDEMY-ApiRobusta.Domain.csproj", "{5E5B4032-E2B5-4B91-8350-4DB59E43F653}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotNet-ApiRobusta.Domain", "UDEMY-ApiRobusta.Domain\dotNet-ApiRobusta.Domain.csproj", "{5E5B4032-E2B5-4B91-8350-4DB59E43F653}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UDEMY-ApiRobusta.AppConsole", "UDEMY-ApiRobusta.AppConsole\UDEMY-ApiRobusta.AppConsole.csproj", "{FE07DCA4-93E8-4C98-A9CD-E402336F77C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotNet-ApiRobusta.AppConsole", "UDEMY-ApiRobusta.AppConsole\dotNet-ApiRobusta.AppConsole.csproj", "{FE07DCA4-93E8-4C98-A9CD-E402336F77C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

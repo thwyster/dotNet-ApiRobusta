@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UDEMY_ApiRobusta.Domain.Entities
+namespace dotNet_ApiRobusta.Domain.Entities
 {
     public class JogoPlataforma
     {

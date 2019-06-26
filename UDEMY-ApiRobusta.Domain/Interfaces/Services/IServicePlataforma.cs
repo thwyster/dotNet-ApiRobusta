@@ -1,7 +1,7 @@
-﻿using UDEMY_ApiRobusta.Domain.Arguments.Jogador;
-using UDEMY_ApiRobusta.Domain.Arguments.Plataforma;
+﻿using dotNet_ApiRobusta.Domain.Arguments.Jogador;
+using dotNet_ApiRobusta.Domain.Arguments.Plataforma;
 
-namespace UDEMY_ApiRobusta.Domain.Services
+namespace dotNet_ApiRobusta.Domain.Services
 {
     public interface IServicePlataforma
     {

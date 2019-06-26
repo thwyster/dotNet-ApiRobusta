@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GIT\\RONNY\\UDEMY-ApiRobusta\\UDEMY-ApiRobusta.AppConsole\\UDEMY-ApiRobusta.AppConsole.csproj": {}
+    "C:\\GIT\\RONNY\\dotNet-ApiRobusta\\UDEMY-ApiRobusta.AppConsole\\UDEMY-ApiRobusta.AppConsole.csproj": {}
   },
   "projects": {
-    "C:\\GIT\\RONNY\\UDEMY-ApiRobusta\\UDEMY-ApiRobusta.AppConsole\\UDEMY-ApiRobusta.AppConsole.csproj": {
+    "C:\\GIT\\RONNY\\dotNet-ApiRobusta\\UDEMY-ApiRobusta.AppConsole\\UDEMY-ApiRobusta.AppConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GIT\\RONNY\\UDEMY-ApiRobusta\\UDEMY-ApiRobusta.AppConsole\\UDEMY-ApiRobusta.AppConsole.csproj",
+        "projectUniqueName": "C:\\GIT\\RONNY\\dotNet-ApiRobusta\\UDEMY-ApiRobusta.AppConsole\\UDEMY-ApiRobusta.AppConsole.csproj",
         "projectName": "UDEMY-ApiRobusta.AppConsole",
-        "projectPath": "C:\\GIT\\RONNY\\UDEMY-ApiRobusta\\UDEMY-ApiRobusta.AppConsole\\UDEMY-ApiRobusta.AppConsole.csproj",
+        "projectPath": "C:\\GIT\\RONNY\\dotNet-ApiRobusta\\UDEMY-ApiRobusta.AppConsole\\UDEMY-ApiRobusta.AppConsole.csproj",
         "packagesPath": "C:\\Users\\ronny.czerkus\\.nuget\\packages\\",
-        "outputPath": "C:\\GIT\\RONNY\\UDEMY-ApiRobusta\\UDEMY-ApiRobusta.AppConsole\\obj\\",
+        "outputPath": "C:\\GIT\\RONNY\\dotNet-ApiRobusta\\UDEMY-ApiRobusta.AppConsole\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,8 +31,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\GIT\\RONNY\\UDEMY-ApiRobusta\\UDEMY-ApiRobusta.Domain\\UDEMY-ApiRobusta.Domain.csproj": {
-                "projectPath": "C:\\GIT\\RONNY\\UDEMY-ApiRobusta\\UDEMY-ApiRobusta.Domain\\UDEMY-ApiRobusta.Domain.csproj"
+              "C:\\GIT\\RONNY\\dotNet-ApiRobusta\\UDEMY-ApiRobusta.Domain\\UDEMY-ApiRobusta.Domain.csproj": {
+                "projectPath": "C:\\GIT\\RONNY\\dotNet-ApiRobusta\\UDEMY-ApiRobusta.Domain\\UDEMY-ApiRobusta.Domain.csproj"
               }
             }
           }
@@ -51,6 +51,10 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "prmToolkit.NotificationPattern": {
+              "target": "Package",
+              "version": "[1.1.2, )"
             }
           },
           "imports": [
@@ -61,14 +65,14 @@
         }
       }
     },
-    "C:\\GIT\\RONNY\\UDEMY-ApiRobusta\\UDEMY-ApiRobusta.Domain\\UDEMY-ApiRobusta.Domain.csproj": {
+    "C:\\GIT\\RONNY\\dotNet-ApiRobusta\\UDEMY-ApiRobusta.Domain\\UDEMY-ApiRobusta.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GIT\\RONNY\\UDEMY-ApiRobusta\\UDEMY-ApiRobusta.Domain\\UDEMY-ApiRobusta.Domain.csproj",
+        "projectUniqueName": "C:\\GIT\\RONNY\\dotNet-ApiRobusta\\UDEMY-ApiRobusta.Domain\\UDEMY-ApiRobusta.Domain.csproj",
         "projectName": "UDEMY-ApiRobusta.Domain",
-        "projectPath": "C:\\GIT\\RONNY\\UDEMY-ApiRobusta\\UDEMY-ApiRobusta.Domain\\UDEMY-ApiRobusta.Domain.csproj",
+        "projectPath": "C:\\GIT\\RONNY\\dotNet-ApiRobusta\\UDEMY-ApiRobusta.Domain\\UDEMY-ApiRobusta.Domain.csproj",
         "packagesPath": "C:\\Users\\ronny.czerkus\\.nuget\\packages\\",
-        "outputPath": "C:\\GIT\\RONNY\\UDEMY-ApiRobusta\\UDEMY-ApiRobusta.Domain\\obj\\",
+        "outputPath": "C:\\GIT\\RONNY\\dotNet-ApiRobusta\\UDEMY-ApiRobusta.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -104,6 +108,10 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "prmToolkit.NotificationPattern": {
+              "target": "Package",
+              "version": "[1.1.2, )"
             }
           },
           "imports": [
