@@ -45,7 +45,7 @@ namespace dotNet_ApiRobusta.Domain.Services
                 AddNotification("AutenticarJogadorRequest", "é obrigatorio");
             }
 
-            var email = new Email("Ronny");
+            var email = new Email(request.Email);
             var jogador = new Jogador(email, "222");
 
             AddNotifications(jogador, email);

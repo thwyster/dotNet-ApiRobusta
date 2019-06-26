@@ -15,6 +15,7 @@ namespace dotNet_ApiRobusta.AppConsole
             Console.WriteLine("Criado Instancia do Objeto Request");
 
             request.Email = "thwyster@hotmail.com";
+            request.Senha = "12345";
 
             var response = service.AutenticarJogador(request);
 
