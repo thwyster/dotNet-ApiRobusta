@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <RootNamespace>UDEMY_ApiRobusta.Domain</RootNamespace>
+    <RootNamespace>dotNet_ApiRobusta.Domain</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

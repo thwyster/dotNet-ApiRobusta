@@ -53,7 +53,7 @@ namespace dotNet_ApiRobusta.Domain.Services
             if (jogador.IsInvalid())
                 return null;
 
-            var response = _repositoryJogador.AutenticarJogador(request);
+            var response = _repositoryJogador.AutenticarJogador(request.Email, request.Senha);
 
             return response;
         }
