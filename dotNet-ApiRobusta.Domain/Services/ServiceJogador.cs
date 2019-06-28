@@ -7,6 +7,7 @@ using dotNet_ApiRobusta.Domain.Entities;
 using dotNet_ApiRobusta.Domain.Interfaces.Repositories;
 using dotNet_ApiRobusta.Domain.Interfaces.Services;
 using dotNet_ApiRobusta.Domain.ValueObjects;
+using System.Linq;
 
 namespace dotNet_ApiRobusta.Domain.Services
 {
@@ -26,16 +27,46 @@ namespace dotNet_ApiRobusta.Domain.Services
 
         public AdicionarJogadorResponse AdicionarJogador(AdicionarJogadorRequest request)
         {
-            Jogador jogador = new Jogador();
-            jogador.Email = request.Email;
-            jogador.Nome = request.Nome;
-            jogador.Status = Enum.StatusJogador.EmAndamento;
+            Nome nome = new Nome(request.PrimeiroNome, request.Senha);
+            Email email = new Email(request.Email);
+            Jogador jogador = new Jogador(nome, email, request.Senha);
 
-            Guid id = _repositoryJogador.AdicionarJogador(jogador);
+            if (this.IsInvalid())
+                return null;
 
-            jogador.Status = Enum.StatusJogador.Ativo;
+            jogador = _repositoryJogador.AdicionarJogador(jogador);
 
-            return new AdicionarJogadorResponse() { Id = id, Message = "Operacação Realizada com Sucesso" };
+            return (AdicionarJogadorResponse)jogador;
+        }
+
+        public AlterarJogadorResponse AlterarJogador(AlterarJogadorRequest request)
+        {
+            if (request == null)
+            {
+                AddNotification("AlterarJogadorRequest", "é obrigatorio");
+            }
+
+            Jogador jogador = _repositoryJogador.ObterJogadorPorId(request.Id);
+
+            if (jogador == null)
+            {
+                AddNotification("Id", "Jogador não foi encontrado");
+                return null;
+            }
+
+            Nome nome = new Nome(request.PrimeiroNome, request.UltimoNome);
+            Email email = new Email(request.Email);
+
+            jogador.AlterarJogador(nome, email, jogador.Status);
+
+            AddNotifications(jogador);
+
+            if (this.IsInvalid())
+                return null;
+
+            _repositoryJogador.AlterarJogador(jogador);
+
+            return (AlterarJogadorResponse)jogador;
         }
 
         public AutenticarJogadorResponse AutenticarJogador(AutenticarJogadorRequest request)
@@ -53,14 +84,15 @@ namespace dotNet_ApiRobusta.Domain.Services
             if (jogador.IsInvalid())
                 return null;
 
-            var response = _repositoryJogador.AutenticarJogador(request.Email, request.Senha);
+            jogador = _repositoryJogador.AutenticarJogador(request.Email, request.Senha);
 
-            return response;
+
+            return (AutenticarJogadorResponse)jogador;
         }
 
-        private bool isEmail(string email)
+        public IEnumerable<JogadorResponse> ListarJogador()
         {
-            return false;
+            return _repositoryJogador.ListarJogador().Select(jogador => (JogadorResponse)jogador).ToList();
         }
     }
 }

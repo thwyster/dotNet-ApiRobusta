@@ -8,16 +8,26 @@ namespace dotNet_ApiRobusta.AppConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Iniciando....");
-            var service = new ServiceJogador();
+            Console.WriteLine("Iniciando Aplicação...");
 
-            AutenticarJogadorRequest request = new AutenticarJogadorRequest();
-            Console.WriteLine("Criado Instancia do Objeto Request");
+            ServiceJogador service = new ServiceJogador();
 
-            request.Email = "thwyster@hotmail.com";
-            request.Senha = "12345";
+            AutenticarJogadorRequest requestAutenticar = new AutenticarJogadorRequest()
+            {
+                Email = "thwyster@hotmail.com",
+                Senha = "12345"
+            };
+            AutenticarJogadorResponse responseAutenticar = service.AutenticarJogador(requestAutenticar);
 
-            var response = service.AutenticarJogador(request);
+
+            AdicionarJogadorRequest requestAdicionar = new AdicionarJogadorRequest()
+            {
+                Email = "joaosilva@hotmail.com",
+                PrimeiroNome = "Joao",
+                SegundoNome = "da Silva",
+                Senha = "123456"
+            };
+            AdicionarJogadorResponse responseAdicionar = service.AdicionarJogador(requestAdicionar);
 
             Console.ReadKey();
         }

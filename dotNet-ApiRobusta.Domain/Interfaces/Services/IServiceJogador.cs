@@ -1,5 +1,7 @@
 ﻿using dotNet_ApiRobusta.Domain.Arguments.Jogador;
 using dotNet_ApiRobusta.Domain.ValueObjects;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace dotNet_ApiRobusta.Domain.Interfaces.Services
 {
@@ -7,5 +9,7 @@ namespace dotNet_ApiRobusta.Domain.Interfaces.Services
     {
         AutenticarJogadorResponse AutenticarJogador(AutenticarJogadorRequest request);
         AdicionarJogadorResponse AdicionarJogador(AdicionarJogadorRequest request);
+        AlterarJogadorResponse AlterarJogador(AlterarJogadorRequest request);
+        IEnumerable<JogadorResponse> ListarJogador();
     }
 }
